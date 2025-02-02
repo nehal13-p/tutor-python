@@ -13,7 +13,8 @@ function Chatbot() {
     setUserMessage('');
   
     try {
-      const response = await fetch('/chat', {
+      // Updated the URL to use the live backend deployed on Render
+      const response = await fetch('https://tutor-python-1.onrender.com/chat', {  // Render backend URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
